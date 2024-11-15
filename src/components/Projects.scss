@@ -1,0 +1,79 @@
+// src/components/Projects.scss
+
+#projects {
+    padding: 50px;
+    background-color: #f4f4f4;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .projects-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center items horizontally
+        justify-content: flex-start; // Align items at the top
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform .3s ease;
+        height: auto;
+
+        .project-logo {
+            width: 80px; // Adjust size as needed (smaller size)
+            height: auto; // Maintain aspect ratio
+            margin-bottom: 10px; // Space between image and title
+            transition: transform .3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        h3 {
+            font-family: 'Nunito', sans-serif;
+            margin-top: 0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .view-certificate-button {
+            margin-top: auto;
+            padding: 6px 10px; // Smaller button size
+            background-color: #0070f3; // Button color for viewing certificate
+            color: white; // Button text color
+            border-radius: 5px; // Rounded corners for button
+            text-decoration: none; // Remove underline from text
+            border: none; // Remove border
+
+            &:hover {
+                background-color: #005bb5; // Darker shade on hover for view button
+                text-decoration: none; // Ensure no underline on hover
+            }
+        }
+
+        .info-button {
+            margin-top: 8px;
+            padding: 6px 10px; // Smaller button size
+            background-color: #28a745; // Button color for more info
+            color: white; // Button text color
+            border-radius: 5px; // Rounded corners for button
+            border: none; // Remove border
+
+            &:hover {
+                background-color: #218838; // Darker shade on hover for info button
+                border: none; // Ensure no border on hover
+            }
+        }
+    }
+}

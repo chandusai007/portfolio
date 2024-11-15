@@ -1,0 +1,45 @@
+// src/components/Skills.scss
+
+#skills {
+    padding: 50px;
+    background-color: #f4f4f4; // Light background color
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Nunito', sans-serif; // Use Nunito font
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: center; // Center align items
+        flex-wrap: wrap; // Allow wrapping of items
+        gap: 20px; // Space between cards
+    }
+
+    .skill-card {
+        background-color: white; // Card background color
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow effect
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease; // Smooth transition for scaling
+
+        .skill-image {
+            width: 80px; // Adjust size as needed
+            height: auto; // Maintain aspect ratio
+            margin-bottom: 10px; // Space between image and text
+            transition: transform 0.3s ease; // Smooth transition for floating effect
+
+            &:hover {
+                transform: translateY(-5px); // Float effect on hover
+            }
+        }
+
+        p {
+            font-family: 'Nunito', sans-serif; // Use Nunito font
+            font-weight: bold; // Make text bold
+            margin-top: 0; // Remove default margin
+        }
+    }
+}

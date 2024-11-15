@@ -1,0 +1,44 @@
+// src/components/Popup.scss
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); // Semi-transparent background
+    display: flex;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+}
+
+.popup-content {
+    background-color: white; // White background for popup content
+    padding: 20px;
+    border-radius: 10px; // Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Shadow effect
+    width: 300px; // Fixed width for popup
+
+    h3 {
+        margin-top: 0; // Remove default margin
+        font-family: 'Nunito', sans-serif; // Use Nunito font
+    }
+
+    p {
+        margin-bottom: 20px; // Space below paragraph text
+        font-family: 'Nunito', sans-serif; // Use Nunito font
+    }
+
+    .close-button {
+        padding: 10px 15px;
+        background-color: #0070f3; // Button color for closing popup
+        color: white; // Button text color
+        border-radius: 5px; // Rounded corners for button
+        border: none;
+
+        &:hover {
+            background-color: #005bb5; // Darker shade on hover for close button
+            cursor: pointer;
+        }
+    }
+}

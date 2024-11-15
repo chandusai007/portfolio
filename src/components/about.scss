@@ -1,0 +1,45 @@
+/* src/components/About.scss */
+
+.about-section {
+    background: #F5FFFA; // Mint Cream background color
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #333; // Darker text color for better readability
+
+    .about-content {
+        display: flex; // Use Flexbox for layout
+        align-items: center; // Center items vertically
+
+        .profile-image {
+            width: 150px; // Adjust size as needed
+            border-radius: 50%; // Makes it circular
+            margin-right: 20px; // Space between image and bio
+            transition: transform 0.3s ease; // Smooth transition for floating effect
+
+            &:hover {
+                transform: translateY(-10px); // Float effect on hover
+                cursor: pointer; // Change cursor to pointer on hover
+            }
+        }
+
+        .bio {
+            h2 {
+                margin-top: 0; // Remove default margin
+                font-family: 'Nunito', sans-serif; // Use Nunito font
+                font-weight: bold; // Make the heading bold
+                color: #222; // Darker color for heading
+            }
+
+            p {
+                margin-top: 10px; // Space above paragraph text
+                font-family: 'Nunito', sans-serif; // Use Nunito font
+                font-weight: normal; // Regular weight for paragraph text
+                color: #333; // Darker color for paragraph text
+                font-size: 1.2rem; // Increase font size for better readability
+                line-height: 1.5; // Improve line height for readability
+            }
+        }
+    }
+}
